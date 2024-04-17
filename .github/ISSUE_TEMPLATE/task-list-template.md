@@ -7,8 +7,11 @@ assignees: yuvasaro
 
 ---
 
-## Description: 
+## Description
 [Insert description here]
+
+## Prerequisites
+- [Link to issue]
 
 ## Tasks
 - [ ] Item

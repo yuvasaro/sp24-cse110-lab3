@@ -7,16 +7,10 @@ assignees: yuvasaro
 
 ---
 
-Tasks: [Insert topic here]
+## Description: 
+[Insert description here]
 
-Description: [Insert description here]
-
-Category
-- [ ] Item
-- [ ] Item
-- [ ] Item
-
-Category
+## Tasks
 - [ ] Item
 - [ ] Item
 - [ ] Item

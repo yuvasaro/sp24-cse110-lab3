@@ -4,6 +4,8 @@
 | Name     | Priorities             | Progress   | Problems   |
 | -------- | ---------------------- | ---------- | ---------- |
 | [name]   | [tasks]                | [progress] | [problems] |
+| [name]   | [tasks]                | [progress] | [problems] |
+| [name]   | [tasks]                | [progress] | [problems] |
 
 ## Key Points
 - Point 1

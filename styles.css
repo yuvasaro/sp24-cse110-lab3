@@ -1,0 +1,211 @@
+/*CSS for the Meeting Minutes webpage.*/
+
+body { 
+    background-color: rgb(0, 0, 0); 
+    margin: 0;
+    font-family: "Source Code Pro", sans-serif;
+} 
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+    background-color: blue;
+    background: #07043b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar a {
+    padding: 18px;
+}
+
+.navbar a:hover {
+    color: blue;
+    background-color: white;
+}
+
+h1, form {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.title-text {
+    margin-top: 70px;
+}
+
+h2 { 
+    color: hsl(120, 25%, 65%);
+    font-size: 3em;
+    margin-top: 10px;
+} 
+
+h3 { 
+    color: color(from green srgb r g b / 0.9);
+    margin-top: 0;
+} 
+
+li { 
+    color: #ffffff;
+    margin: auto;
+}
+
+details li {
+    margin-left: 275px;
+}
+
+h4 {
+    color: color-mix(in lch, plum, pink);
+}
+
+summary {
+    color: var(--summary-color, red);
+}
+
+a {
+    color: yellow;
+}
+
+.list-title {
+    font-size: 18px;
+    color: lightskyblue;
+}
+
+.col1, .col2 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 40px;
+}
+
+.meeting {
+    padding: 0px 20px 20px 20px;
+    border-color: white;
+    border-style: ridge;
+    border-width: 1lh;
+    display: block;
+}
+
+.content {
+    clear: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    padding-right: 50px;
+    float: left;
+}
+
+.attendance {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.info::after, .attendance::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.subtitle {
+    float: left;
+    padding-right: 20px;
+}
+
+footer {
+    display: none;
+}
+
+video {
+    width: 100%;
+    height: 56%;
+}
+
+button {
+    font-weight: bold;
+}
+
+button:active {
+    color: white;
+    border: 2px solid red;
+    background-image: url(assets/fire.jpg);
+}
+
+form {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+textarea {
+    max-width: 95%;
+}
+
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+  
+.top-right {
+    grid-column: 2;
+    grid-row: 1;
+}
+  
+.bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+  
+.bottom-right {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.top-left *, .top-right *, .bottom-left *, .bottom-right * {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar, h3, h4 {
+        font-size: 25px;
+    }
+
+    .attendance {
+        margin: 5px;
+        font-size: 80%;
+    }
+
+    li {
+        margin-left: 15%;
+    }
+    
+    .content {
+        display: block;
+    }
+    
+    form {
+        display: block;
+        font-size: 25px;
+    }
+
+    button {
+        width: 80%;
+        height: 50px;
+    }
+}

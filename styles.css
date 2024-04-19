@@ -193,8 +193,7 @@ textarea {
 }
 
 .top-left *, .top-right *, .bottom-left *, .bottom-right * {
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin: 0px 0px 20px 10px;
 }
 
 @media only screen and (max-width: 1000px) {

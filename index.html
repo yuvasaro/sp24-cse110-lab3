@@ -28,11 +28,12 @@
         <div class="meeting">
           <h2>Meeting 1</h2>
           <div class="info">
+            <div class="dummy"></div>
             <h3 class="subtitle"><i>Sample Meeting</i></h3>
             <h4 class="date">4/10/2024</h4>
           </div>
           <div class="attendance">
-            <details>
+            <details open>
               <summary>Attendance List (Click to Expand)</summary>
               <ul>
                 <li>Person A</li>
@@ -85,12 +86,11 @@
         </div>
         <div class="meeting">
           <h2>Meeting 2</h2>
+          <div class="dummy"></div>
           <h3>(Did not occur unfortunately)</h3>
         </div>
       </section>
-      <br>
-      <br>
-      <h1 style="color: darkcyan; font-size: 40px">Quiz Time!</h1>
+      <h1>Quiz Time!</h1>
       <form>
         <div class="top-left">
           <fieldset>
@@ -129,7 +129,7 @@
             <option value="Javascript">Javascript</option>
           </select>
           <br>
-          <button type="button">Send your data to the government</button>
+          <button type="button" id="govt-button">Send your data to the government</button>
         </div>
       </form>
       <hr>

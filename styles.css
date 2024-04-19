@@ -1,12 +1,14 @@
 /*CSS for the Meeting Minutes webpage.*/
+* {
+    font-family: "Source Code Pro", sans-serif;
+}
 
 body { 
     background-color: rgb(0, 0, 0); 
     margin: 0;
-    font-family: "Source Code Pro", sans-serif;
 } 
 
-.navbar {
+div.navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,17 +36,26 @@ h1, form {
     position: relative;
 }
 
+h1:has(+ form) {
+    color: lightblue;
+    font-size: 40px;
+}
+
 .title-text {
     margin-top: 70px;
 }
 
-h2 { 
+.meeting > h2 { 
     color: hsl(120, 25%, 65%);
     font-size: 3em;
     margin-top: 10px;
 } 
 
-h3 { 
+.dummy {
+    display: none;
+}
+
+.dummy + h3 { 
     color: color(from green srgb r g b / 0.9);
     margin-top: 0;
 } 
@@ -55,10 +66,10 @@ li {
 }
 
 details li {
-    margin-left: 275px;
+    margin-left: 200px;
 }
 
-h4 {
+h3 ~ h4 {
     color: color-mix(in lch, plum, pink);
 }
 
@@ -75,7 +86,7 @@ a {
     color: lightskyblue;
 }
 
-.col1, .col2 {
+[class*="col"] {
     padding-top: 0px;
     padding-bottom: 20px;
     padding-left: 0px;
@@ -127,11 +138,11 @@ video {
     height: 56%;
 }
 
-button {
+#govt-button {
     font-weight: bold;
 }
 
-button:active {
+#govt-button:active {
     color: white;
     border: 2px solid red;
     background-image: url(assets/fire.jpg);
@@ -143,17 +154,22 @@ form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
+    & div {
+        border: 1px solid white;
+        border-radius: 10px;
+    }
 }
 
 fieldset {
     padding: 0;
     margin: 0;
-    max-width: 40%;
+    max-width: 50%;
     border-radius: 10px;
 }
 
 textarea {
     max-width: 95%;
+    margin-top: 10px;
 }
 
 .top-left {
@@ -183,15 +199,20 @@ textarea {
 
 @media only screen and (max-width: 1000px) {
     .navbar, h3, h4 {
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    .info, .subtitle {
+        float: none;
+        max-width: 100%;
     }
 
     .attendance {
+        font-size: 20px;
         margin: 5px;
-        font-size: 80%;
     }
 
-    li {
+    li, details li {
         margin-left: 15%;
     }
     

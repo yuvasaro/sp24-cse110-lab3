@@ -6,74 +6,93 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon16.png">
     <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>p {color:white}</style>
     <title>Meeting Minutes</title>
   </head>
   <body>
     <header>
-        <nav>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Home</a>
-        </nav>
+        <div class="navbar">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Home</a>
+          <a href="https://www.youtube.com/watch?v=kkwiQmGWK4c&t=8s" target="_blank">Important Information</a>
+          <a href="" target="_blank">Dupe!</a>
+        </div>
     </header>
     <main>
-        <h1>Meeting Minutes</h1>
-        <hr>
-        <section class="list-of-meetings">
-            <div class="meeting1">
-                <h2>Meeting 1</h2>
-                <h3><i>Sample Meeting</i></h3>
-                <h4>4/10/2024</h4>
-                <details>
-                  <summary>Attendance List (Click to Expand)</summary>
-                  <ul>
-                    <li>Person A</li>
-                    <li>Person B</li>
-                    <li><b>Person C</b></li>
-                    <li>Person D</li>
-                    <li>Person E</li>
-                  </ul>
-                </details>
-                <br>
-                <h3>Agenda</h3>
-                <p>TODO: Look at all the businesses below and weep.</p>
-                <br>
-                <p>Unfinished Business</p>
-                <ol>
-                  <li>This business is <em>Unfinished</em>.</li>
-                  <li>This <strong>issue</strong> needs to be dealt with.</li>
-                  <li>I hope <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">this business</a> gets finished soon.</li>
-                </ol>
-                <p>New Business</p>
-                <ol>
-                  <li>There is no <span>shortage</span> of work to be done.</li>
-                  <li>Mind your own business. And mind everything listed above too.</li>
-                </ol>
-                <p>Questions/Comments</p>
-                <ul>
-                  <li>Q: What is the meaning of life?</li>
-                  <li>C: This comment is so long that I'm going to have to <br> put part of it on another line.</li>
-                </ul>
-                <p>Diagrams</p>
-                <img src="assets/diagram.png" alt="A Diagram">
-                <p>Meeting Audio</p>
-                <audio controls>
-                  <source src="assets/narration.mp3" type="audio/mp3">
-                </audio>
-                <p>Meeting Video</p>
-                <video width="640" height="360" controls>
-                  <source src="assets/business.mp4" type="video/mp4">
-                </video>
-                <br>
-                <br>
+      <h1 class="title-text" style="color: darkcyan; font-size: 40px">Meeting Minutes</h1>
+      <hr>
+      <section class="list-of-meetings">
+        <div class="meeting">
+          <h2>Meeting 1</h2>
+          <div class="info">
+            <h3 class="subtitle"><i>Sample Meeting</i></h3>
+            <h4 class="date">4/10/2024</h4>
+          </div>
+          <div class="attendance">
+            <details>
+              <summary>Attendance List (Click to Expand)</summary>
+              <ul>
+                <li>Person A</li>
+                <li>Person B</li>
+                <li>Person C</li>
+                <li>Person D</li>
+                <li>Person E</li>
+              </ul>
+            </details>
+          </div>
+          <br>
+          <div class="content">
+            <div class="col1">
+              <h3>Agenda</h3>
+              <p>TODO: Look at all the businesses below and weep.</p>
+              <p class="list-title">Unfinished Business</p>
+              <ol>
+                <li>This business is <em>Unfinished</em>.</li>
+                <li>This <strong>issue</strong> needs to be dealt with.</li>
+                <li>I hope <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">this business</a> gets finished soon.</li>
+              </ol>
+              <p class="list-title">New Business</p>
+              <ol>
+                <li>There is no <span>shortage</span> of work to be done.</li>
+                <li>Mind your own business. And mind everything listed above too.</li>
+              </ol>
+              <p class="list-title">Questions/Comments</p>
+              <ul>
+                <li>Q: What is the meaning of life?</li>
+                <li>C: This comment is so long that I'm going to have to <br> put part of it on another line.</li>
+              </ul>
             </div>
-            <div class="meeting2">
-              <h2>Meeting 2</h2>
-              <h3>(Did not occur unfortunately)</h3>
+            <div class="col2">
+              <p class="list-title">Diagrams</p>
+              <img src="assets/diagram.png" alt="A Diagram">
+              <p>Meeting Audio</p>
+              <audio controls>
+                <source src="assets/narration.mp3" type="audio/mp3">
+              </audio>
             </div>
-        </section>
-        <br>
-        <br>
-        <h1>Quiz Time!</h1>
-        <form>
+            <div class="col3">
+              <p>Meeting Video</p>
+              <video controls>
+                <source src="assets/business.mp4" type="video/mp4">
+              </video>
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="meeting">
+          <h2>Meeting 2</h2>
+          <h3>(Did not occur unfortunately)</h3>
+        </div>
+      </section>
+      <br>
+      <br>
+      <h1 style="color: darkcyan; font-size: 40px">Quiz Time!</h1>
+      <form>
+        <div class="top-left">
           <fieldset>
             <legend>Are you good or bad</legend>
             <input type="radio" id="good" name="goodorbad" value="g">
@@ -81,30 +100,28 @@
             <input type="radio" id="bad" name="goodorbad" value="b">
             <label for="bad">Bad</label>
           </fieldset>
-          <br>
+        </div>
+        <div class="top-right">
           <label for="t1">Enter your favorite food:</label>
           <input type="text" id="t1">
-          <br>
-          <br>
-          <label for="check">Check this box or else...</label>
-          <input type="checkbox" id="check">
-          <br>
           <br>
           <label for="date">When is your birthday?</label>
           <input type="date" id="date">
           <br>
-          <br>
-          <textarea name="t2" id="t2" cols="80" rows="10">Write a 2000-word essay about how much you love coding in pure HTML.</textarea>
-          <br>
-          <br>
-          <label for="gb2-input">Which of these is the most braindead social media app?<br>(Or suggest one yourself)</label>
-          <input list="goodorbad2" id="gb2-input">
-          <datalist id="goodorbad2">
+          <label for="check">Check this box or else...</label>
+          <input type="checkbox" id="check">
+        </div>
+        <div class="bottom-left">
+          <textarea name="t2" id="t2" cols="80" rows="8" class="bottom-left">Write a 2000-word essay about how much you love coding in pure HTML.</textarea>
+        </div>
+        <div class="bottom-right">
+          <label for="apps-input" class="bottom-right">Which of these is the most braindead social media app? (Or suggest one yourself)</label>
+          <input list="apps" id="apps-input">
+          <datalist id="apps">
             <option value="Instagram"></option>
             <option value="TikTok"></option>
             <option value="Twitter"></option>
           </datalist>
-          <br>
           <br>
           <label for="worst-lang">Select Worst Programming Language:</label>
           <select id="worst-lang">
@@ -112,11 +129,10 @@
             <option value="Javascript">Javascript</option>
           </select>
           <br>
-          <br>
           <button type="button">Send your data to the government</button>
-        </form>
-        <br>
-        <br>
+        </div>
+      </form>
+      <hr>
     </main>
     <footer>
       <p>You are currently looking at the webpage's magnificent sneakers. (Get it? Footer haha)</p>

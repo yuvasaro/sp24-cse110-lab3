@@ -1,5 +1,6 @@
 /*CSS for the Meeting Minutes webpage.*/
 * {
+    /* third-party font */
     font-family: "Source Code Pro", sans-serif;
 }
 
@@ -9,10 +10,12 @@ body {
 } 
 
 div.navbar {
+    /* flex attributes */
     display: flex;
     flex-direction: row;
     justify-content: center;
     column-gap: 50px;
+
     background-color: blue;
     background: #07043b;
     position: fixed;
@@ -150,10 +153,15 @@ video {
 
 form {
     color: white;
+    text-align: center;
+    text-decoration: underline;
+
+    /* grid attributes */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
+
     & div {
         border: 1px solid white;
         border-radius: 10px;
@@ -227,5 +235,10 @@ textarea {
     button {
         width: 80%;
         height: 50px;
+    }
+
+    video {
+        max-width: 100%;
+        max-height: 56%;
     }
 }

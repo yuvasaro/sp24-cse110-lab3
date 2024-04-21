@@ -25,7 +25,7 @@ div.navbar {
 }
 
 .navbar a {
-    padding: 18px;
+    padding: 1.125rem;
 }
 
 .navbar a:hover {
@@ -34,14 +34,14 @@ div.navbar {
 }
 
 h1, form {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15pt;
+    margin-right: 15pt;
     position: relative;
 }
 
 h1:has(+ form) {
     color: lightblue;
-    font-size: 40px;
+    font-size: 0.417in;
 }
 
 .title-text {
